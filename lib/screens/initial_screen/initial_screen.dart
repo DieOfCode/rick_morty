@@ -13,7 +13,7 @@ class InitialScreen extends StatelessWidget {
       backgroundColor: mainDartColor,
       body: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, CharactersScreen.route);
+          Navigator.pushReplacementNamed(context, CharactersScreen.route);
         },
         child: Container(
           width: double.infinity,

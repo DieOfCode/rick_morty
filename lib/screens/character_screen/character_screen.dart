@@ -133,6 +133,33 @@ class _CharactersScreenState extends State<CharactersScreen> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        showUnselectedLabels: true,
+        selectedItemColor: bottomBarActiveTextColor,
+        unselectedLabelStyle: TextStyle(color: bottomBarTextColor),
+        selectedLabelStyle: TextStyle(color: bottomBarActiveTextColor),
+        backgroundColor: Colors.black12,
+        items: [
+          BottomNavigationBarItem(
+              icon: Image.asset('assets/images/ghost.png'),
+              label: 'Персонажи',
+              backgroundColor: bottomBarColor),
+          BottomNavigationBarItem(
+              icon: Image.asset(
+                'assets/images/planet.png',
+              ),
+              label: 'Локации',
+              backgroundColor: bottomBarColor),
+          BottomNavigationBarItem(
+              icon: Image.asset('assets/images/tv.png'),
+              label: 'Эпизоды',
+              backgroundColor: bottomBarColor),
+          BottomNavigationBarItem(
+              icon: Image.asset('assets/images/setting.png'),
+              label: 'Настройки',
+              backgroundColor: bottomBarColor),
+        ],
+      ),
     );
   }
 }

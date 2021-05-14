@@ -44,8 +44,11 @@ class ListViewCardCharacter extends StatelessWidget {
               ],
             ),
             leading: CircleAvatar(
-              radius: 30,
-              backgroundImage: AssetImage(character.imageRoute),
+              radius: 50,
+              child: ClipRRect(
+                child: Image.asset(character.imageRoute),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
             ),
           )
         ],
